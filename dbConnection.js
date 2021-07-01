@@ -11,7 +11,7 @@ const models = ['role',
 
 module.exports = {
     sequelizer: new Sequelize('billsmanager', 'root', '12345', {
-        host: 'http://82.137.250.151',
+        host: 'http://82.137.250.151:3306',
         dialect: 'mysql',
         define: {
             timestamps: false
