@@ -38,6 +38,8 @@ server.use('/api/user',require('./controllers/user.js'))
 server.use('/api/bill',require('./controllers/bill.js'))
 server.use('/api/purchase',require('./controllers/purchase.js'))
 server.use('/api/externalPayment',require('./controllers/externalPayment.js'))
-
+server.get('/',(req,res)=>{
+    res.json({message:'hello'})
+})
 http.listen(PORT, console.log(`server is now listening on port ${PORT}`))
 //const sockets = require('./sockets')
