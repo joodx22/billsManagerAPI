@@ -10,7 +10,7 @@ const models = ['role',
                 'externalPayment']
 
 module.exports = {
-    sequelizer: new Sequelize('billsmanager', 'root', '12345', {
+    sequelizer: new Sequelize('epiz_28710559_billmanager', 'epiz_28710559', '6fa1B1v2g6PtP', {
         host: '82.137.250.151',
         dialect: 'mysql',
         dialectOptions: {
