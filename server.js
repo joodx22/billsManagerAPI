@@ -41,5 +41,5 @@ server.use('/api/externalPayment',require('./controllers/externalPayment.js'))
 server.get('/',(req,res)=>{
     res.json({message:'hello'})
 })
-http.listen(PORT, console.log(`server is now listening on port ${PORT}`))
+http.listen(process.env.PORT || PORT, console.log(`server is now listening on port ${PORT}`))
 //const sockets = require('./sockets')
