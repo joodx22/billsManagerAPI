@@ -10,8 +10,8 @@ const models = ['role',
                 'externalPayment']
 
 module.exports = {
-    sequelizer: new Sequelize('epiz_28710559_billmanager', 'epiz_28710559', '6fa1B1v2g6PtP', {
-        host: '82.137.250.151',
+    sequelizer: new Sequelize('sql11423734', 'sql11423734', 'L6fWa6qJ1e', {
+        host: 'sql11.freemysqlhosting.net',
         dialect: 'mysql',
         dialectOptions: {
             connectTimeout:100000
