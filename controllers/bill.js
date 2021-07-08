@@ -4,6 +4,10 @@ const verifyJWTToken = require('../middlewares/verifyJWTToken')
 const verifyIsUserAdmin = require('../middlewares/verifyUserAdmin')
 const router = express.Router()
 
+router.get('/getBillsNow',(req,res)=>{
+    res.json({message:'hello from bills'})
+})
+
 router.get('/', verifyJWTToken, async (req, res) => {
     let userId = req.query.userId
     let dbUserBills = await bill.findAll({
