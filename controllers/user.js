@@ -22,7 +22,7 @@ const upload = multer({
     storage: storageM
 })
 
-router.get('/', verifyJWTToken, async (req, res) => {
+router.get('/', async (req, res) => {
     let roleId = req.query.roleId
     let dbUsers = await user.findAll({where: {roleId}})
     res.json(dbUsers)
